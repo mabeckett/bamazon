@@ -19,7 +19,15 @@ var inventoryList = function() {
 	connection.query('SELECT * FROM products', function(error, products) {
 		if (error) throw error;
 	});
+
 	 for (var i=0; i < prodcuts.length; i++) {
-	 	console.log('Item ID: ' + products[i].ItemID + 'Product Name: ')
-	 }
+	 	console.log('-----------------------------------------------------------------------');
+	 	console.log('Item ID: ' + products[i].ItemID + 'Product Name: ' + products[i].ProductName + 'Department Name: ' + products[i].DepartmentName + 
+	 		'Price: ' + products[i].Price);
+	 	console.log('-----------------------------------------------------------------------');
+	 };
+
+	 
+
+
 }
